@@ -117,8 +117,8 @@ USE_TZ = True
 
 ## Send Mail Details
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'cnikita555@gmail.com'
-EMAIL_HOST_PASSWORD = 'Techsim@2020'
+EMAIL_HOST_USER = 'abc@gmail.com'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 #SSL 465
