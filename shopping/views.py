@@ -166,8 +166,8 @@ def Remove_Pro_from_cart(request,cid):
     data.delete()
     return redirect('mycart')
 
-headers = { "X-Api-Key": "36fedc81de23f05b7044ababd27d0555",
-            "X-Auth-Token": "6fb6c5ad36a9baa8a7c734141a9535f3"}
+headers = { "X-Api-Key": "api-key",
+            "X-Auth-Token": "auth-token"}
 
 import requests
 import json
@@ -178,7 +178,7 @@ def Payment(user,amount,order_id):
         "buyer_name":user.username,
         "amount":10,
         "email":user.email,
-        "phone":+917389693197,
+        "phone":user.mobile,
         "send_email":True,
         "send_sms":True,
         "redirect_url":"http://127.0.0.1:8000/payment_check/"+str(order_id)+"/"
